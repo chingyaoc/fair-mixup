@@ -15,5 +15,20 @@ Training classifiers under fairness constraints such as group fairness, regulari
 - sklearn
 
 ## Implementation
-The code of fair-mixup for Adult and CelebA experiments can be founded in the correspoding folders.
+The code for Adult and CelebA experiments can be found in the correspoding folders.
 
+## Citation
+
+If you find this repo useful for your research, please consider citing the paper
+
+```
+@inproceedings{
+chuang2021fair,
+title={Fair Mixup: Fairness via Interpolation},
+author={Ching-Yao Chuang and Youssef Mroueh},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=DNl5s5BXeBn}
+}
+```
+For any questions, please contact Ching-Yao Chuang (cychuang@mit.edu).
