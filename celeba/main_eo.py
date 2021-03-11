@@ -159,15 +159,6 @@ if __name__ == '__main__':
     test_df = df['test']
 
     # data_loader
-    mean = [0.485, 0.456, 0.406]
-    std = [0.229, 0.224, 0.225]
-    normalize = transforms.Normalize(mean=mean, std=std)
-    tfms = transforms.Compose([
-        transforms.Resize((256, 256)),
-        transforms.ToTensor(),
-        normalize,
-    ])
-
     train_dataloader = get_loader(train_df, 'celeba/split/train/', target_id, 64)
     valid_dataloader = get_loader(valid_df, 'celeba/split/val/', target_id, 64)
     test_dataloader = get_loader(test_df, 'celeba/split/test/', target_id, 64)
