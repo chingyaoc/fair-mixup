@@ -1,7 +1,7 @@
 # Celeb-A Experiment
 
 ## Dataset
-Place the adult dataset under directory ```./celeba``` (adult.data and adult.test) and run ```data_processing.py``` to process the dataset. 
+Place the CelebA dataset (```list_attr_celeba.txt```, ```list_eval_partition.txt```, ```img_align_celeba```) under directory ```./celeba``` and run ```data_processing.py``` to process the dataset. 
 
 ## Run
 Run the experiment for DP:
