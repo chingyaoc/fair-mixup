@@ -7,7 +7,6 @@ from tqdm import tqdm
 from PIL import Image
 import shutil
 import pickle
-import pdb
 
 labels_path = 'celeba/list_attr_celeba.txt'
 image_path = 'celeba/img_align_celeba/'
@@ -42,7 +41,6 @@ test_dict = {}
 for i in tqdm(range(len(lines))):
     file_name, sp = lines[i].split()
     sp = sp.split('\n')[0]
-    pdb.set_trace()
     if sp == '0':
         labels = np.array(label_df[label_df.index==file_name])
         train_dict[file_name] = labels
